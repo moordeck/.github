@@ -1,27 +1,31 @@
 # Moordeck
 
-**Local-First Anti-Detect Fingerprint Browser & Standard Local API Engine**  
-**本地优先的多开防关联指纹浏览器与标准 Local API 引擎**
+**Local-First Anti-Detect Browser, Standard Local API & Free Fingerprint / IP / AI Diagnostics**  
+**本地优先的多账号防关联指纹浏览器 · 标准 Local API 引擎 · 免费指纹 / IP / AI 环境检测**
 
 ---
 
-## Highlights / 核心特性
+## Platform Highlights / 核心能力
 
-- **Local-First Desktop App (`Moordeck.app`)**: Zero-login standalone operation on macOS Apple Silicon (`darwin-arm64`) with embedded SQLite WAL ledger and local `0600` AES-256-GCM encrypted vault for cookies, fingerprints, and proxy credentials.
-- **Patched Anti-Detect Kernel (`moordeck-chromium`)**: Independently packaged `Ed25519`-signed Chromium builds (`mc-155-v1`, Chromium `155.0.8059.39`) with multi-version slot isolation, `netguard` private/CGNAT egress blocking, and non-proxied UDP prevention.
-- **Standard Local API & `mdk` CLI**: Loopback REST API (`127.0.0.1:9112`) and `mdk` CLI for Playwright / Puppeteer automation, batch environment management, headless Linux daemon (`mdkd`), and window layout arrangement.
-- **Optional Encrypted Team Sync**: Passwordless sign-in (Google OAuth PKCE / Email OTP) via [moordeck.com](https://moordeck.com) with team-scoped `HKDF-SHA256 + AES-256-GCM` envelope encryption and distributed lease locks.
+- **Zero-Login Local Mode (`Moordeck.app`)**: Run 5 isolated browser profiles and single-window Local API automation on macOS Apple Silicon (`arm64`) immediately after download, with encrypted local credential storage.
+- **Patched Anti-Detect Chromium Kernels**: Per-profile signed browser kernels aligning hardware fingerprints, Canvas/WebGL, OS fonts, timezone, locale, and WebRTC/UDP leak guardrails.
+- **Standard Local API (`http://127.0.0.1:9112`) & `mdk` CLI**: Connect Playwright (`connectOverCDP`), Puppeteer, cURL, or Linux headless automation (`mdkd`) across isolated profiles and multi-window layouts.
+- **Envelope-Encrypted Cloud Sync & Lease Locks**: Optional passwordless team workspaces on [moordeck.com](https://moordeck.com) with multi-device synchronization, 30-day cloud recycle bin, and exclusive profile lease locks.
+- **Open Agent Discovery & MCP**: Public Streamable HTTP MCP server at `https://moordeck.com/mcp`, `Accept: text/markdown` content negotiation, OpenAPI 3.1, and `SKILL.md`.
 
 ---
 
 ## Quick Links / 快速入口
 
-- **Website / 官网**: https://moordeck.com
-- **Download / 客户端下载**: https://moordeck.com/download
-- **Official Releases & Issue Tracker / 官方发行版与问题反馈**: https://github.com/moordeck/releases
-- **Fingerprint & Proxy Diagnostics / 指纹与代理检测**: https://moordeck.com/check · https://moordeck.com/ip
-- **CLI & API Docs / 接口文档**: https://moordeck.com/docs
-- **Homebrew (macOS)**:
-  ```bash
-  brew install --cask moordeck/tap/moordeck
-  ```
+| Resource | URL |
+|---|---|
+| **Website (EN / 中文)** | <https://moordeck.com> · <https://moordeck.com/zh> |
+| **Download Client & CLI** | <https://moordeck.com/download> |
+| **Pricing & Plans** | <https://moordeck.com/pricing> (`Free $0` · `Solo $79` · `Pro $9/mo` · `Team $29/mo`) |
+| **Official Documentation Repo** | [moordeck/docs](https://github.com/moordeck/docs) · <https://moordeck.com/docs> |
+| **Official Releases & Checksums** | [moordeck/releases](https://github.com/moordeck/releases) |
+| **Free Diagnostics** | [/check](https://moordeck.com/check) (70-Vector Fingerprint) · [/ip](https://moordeck.com/ip) (Proxy Purity) · [/ai-check](https://moordeck.com/ai-check) (AI & Claude Env) |
+| **Agent Discovery & MCP** | [llms.txt](https://moordeck.com/llms.txt) · [MCP Endpoint](https://moordeck.com/mcp) · [SKILL.md](https://moordeck.com/skill.md) |
+| **Homebrew (macOS)** | `brew install --cask moordeck/tap/moordeck` ([moordeck/homebrew-tap](https://github.com/moordeck/homebrew-tap)) |
+
+<sub>Source code repositories remain private; the `moordeck` organization hosts public documentation, release checksums, issue tracking, Homebrew formulas, and agent skills.</sub>
